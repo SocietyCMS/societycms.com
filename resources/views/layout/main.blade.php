@@ -17,10 +17,6 @@
     <meta name="description" content="SocietyCMS - The only CMS designed for your society.">
     <meta name="keywords" content="societycms, php, cms, web">
 
-    <!--
-    <script src="http://localhost:8080/webpack-dev-server.js"></script>
-    <script src="http://localhost:8080/resources/bundle.js"></script>
--->
     <script src="/resources/bundle.js"></script>
 </head>
 <body class="@yield('body-class', 'docs') language-php">

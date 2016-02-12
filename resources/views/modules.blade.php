@@ -5,7 +5,7 @@
 @section('content')
 
     <div class="ui container">
-        <div class="ui cards">
+        <div class="ui centered cards">
                 <div class="ui card">
                     <div class="content">
                         <div class="header">Cute Dog</div>

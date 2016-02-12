@@ -1,7 +1,7 @@
+var BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 var autoprefixer = require('autoprefixer');
-var precss       = require('precss');
-var webpack = require('webpack');
-var path = require('path');
+var precss = require('precss');
+
 
 module.exports = {
     context: __dirname + '/resources/assets',
@@ -42,7 +42,10 @@ module.exports = {
         return [autoprefixer, precss];
     },
     plugins: [
-        new webpack.HotModuleReplacementPlugin(),
-        new webpack.NoErrorsPlugin()
+        new BrowserSyncPlugin({
+            // browse to http://localhost:3000/ during development,
+            // ./public directory is being served
+            proxy: 'societycms.tinker'
+        })
     ]
 };
