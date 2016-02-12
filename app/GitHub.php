@@ -6,13 +6,19 @@ use Github\HttpClient\Message\ResponseMediator;
 use GrahamCampbell\GitHub\Facades\GitHub as GitHubAPI;
 use Illuminate\Support\Facades\Cache;
 
-class GitHub {
+class GitHub
+{
 
     public function latestOrganisationCommits()
     {
-        return Cache::remember('latestOrganisationCommits', 1, function() {
+        return Cache::remember('latestOrganisationCommits', 1, function () {
+            if (empty(config('github.connections.main.token'))) {
+                return null;
+            }
+
             $response = GitHubAPI::connection('main')->getHttpClient()->get('orgs/societycms/events');
             return collect(ResponseMediator::getContent($response))->where('type', 'PushEvent')->take(3);
+
         });
     }
 
