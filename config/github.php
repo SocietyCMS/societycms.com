@@ -39,7 +39,7 @@ return [
     'connections' => [
 
         'main' => [
-            'token'   => env('GITHUB_TOKEN', 'file'),
+            'token'   => env('GITHUB_TOKEN', ''),
             'method'  => 'token',
             // 'baseUrl' => 'https://api.github.com/',
             // 'version' => 'v3',
