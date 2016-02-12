@@ -1,0 +1,133 @@
+@import "_variables.scss";
+
+/*-------------------
+      Banner
+--------------------*/
+
+body.home {
+
+  #banner .background-image {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    content: '';
+    opacity: 0;
+
+    transition: opacity 6s cubic-bezier(0.680, -0.550, 0.265, 1.4) 0s;
+  }
+
+  @media only screen and(min-width: 767px) {
+
+    #banner.bg .background-image {
+      opacity: 1;
+
+      background-image: linear-gradient(to bottom, rgba($blue, 0.25), rgba($violet, 0.35)), linear-gradient(to bottom, rgba($black, 0.75), rgba($black, 0.75)), url("../images/banner-small.jpg");
+      background-attachment: fixed, fixed, fixed;
+      background-position: center 100%, center 100%, center 100%;
+      background-repeat: repeat, repeat, no-repeat;
+      background-size: cover, cover, cover;
+    }
+
+  }
+
+  #banner {
+
+    background-image: linear-gradient(to bottom, rgba($blue, 0.25), rgba($violet, 0.35)), linear-gradient(to bottom, rgba($black, 0.75), rgba($black, 0.75));
+    background-attachment: fixed, fixed;
+    background-position: center 100%, center 100%;
+    background-repeat: repeat, repeat;
+    background-size: cover, cover;
+
+    z-index: -2;
+    height: 100vh;
+    min-height: 40em;
+
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+
+    .ui.secondary.inverted.pointing.menu {
+      border: none;
+    }
+
+    #screenshot {
+      background-image: url("../images/societycms-screenshot.png");
+      background-attachment: local;
+      background-position: center 0px;
+      background-repeat: no-repeat;
+      background-size: contain;
+
+      height: 100%;
+      margin-top: 50px;
+    }
+  }
+
+  #banner + .ui.vertical.stripe {
+    box-shadow: 0 -7px 9px -7px rgba(0, 0, 0, 0.7);
+  }
+
+  /*-----------------------------
+        General Masthead
+  -------------------------------*/
+
+  .masthead {
+    &.segment {
+      min-height: 700px;
+      padding: 1em 0;
+    }
+    h2 {
+      font-size: 1.7em;
+      font-weight: normal;
+    }
+    .ui.menu .ui.button {
+      margin-left: 0.5em;
+    }
+    h1.ui.header {
+      margin-top: 1em;
+      margin-bottom: 0;
+      font-size: 7em;
+      font-weight: normal;
+    }
+  }
+
+  .quote.stripe.segment {
+    padding: 0;
+    .grid .column {
+      padding-top: 5em;
+      padding-bottom: 5em;
+    }
+  }
+
+
+  /*-----------------------------
+      Hide general menu
+-------------------------------*/
+
+  .top-color-strip, .hidden.menu {
+    display: none;
+  }
+
+  /*-----------------------------
+        Mobile View
+  -------------------------------*/
+
+  @media only screen and(max-width: 767px) {
+    .masthead {
+      &.segment {
+        min-height: 350px;
+      }
+      h2 {
+        margin-top: 0.5em;
+        font-size: 1.5em;
+      }
+      h1.ui.header {
+        font-size: 2em;
+        margin-top: 1.5em;
+      }
+    }
+  }
+
+}

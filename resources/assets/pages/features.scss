@@ -1,0 +1,53 @@
+@import "_variables.scss";
+
+/*-------------------
+      Feature Page
+--------------------*/
+
+body.features {
+
+  // Blue Dev-features section
+
+  .feature.column {
+
+    margin-bottom: 3em;
+
+    .header {
+      padding-bottom: .21428571rem;
+      border-bottom: 1px solid rgba(34,36,38,.15);
+    }
+    .content {
+      line-height: 1.5em;
+    }
+  }
+
+
+  .ui.emphasis.vertical.stripe {
+
+    .feature.header {
+      text-align: center;
+      color: $white;
+
+      padding-bottom: .51428571rem;
+      border-bottom: 1px solid rgba($white, 0.15);
+
+      .icon {
+        float: none;
+        display: block;
+        margin: 0em auto 1rem;
+        font-size: 3em;
+
+        border-radius: 500em;
+        line-height: 1;
+        padding: 0.5em 0.5em;
+        box-shadow: 0em 0em 0em 0.05em rgba($white, 0.3) inset;
+        width: 2em;
+        height: 2em;
+      }
+
+    }
+
+  }
+
+
+}
