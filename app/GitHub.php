@@ -13,7 +13,7 @@ class GitHub
     {
         return Cache::remember('latestOrganisationCommits', 1, function () {
             if (empty(config('github.connections.main.token'))) {
-                return null;
+                return [];
             }
 
             $response = GitHubAPI::connection('main')->getHttpClient()->get('orgs/societycms/events');
