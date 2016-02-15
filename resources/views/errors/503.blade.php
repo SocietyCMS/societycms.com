@@ -25,7 +25,7 @@
 
     <div class="ui inverted vertical masthead center aligned segment" id="banner">
 
-        <div class="background-image"></div>
+        <div class="background-image" style="opacity: 0"></div>
 
         <div class="ui text container">
             <h1 class="ui inverted header coming-soon">

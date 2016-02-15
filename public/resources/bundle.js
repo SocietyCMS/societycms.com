@@ -84,22 +84,22 @@
 	     |-------------------------------------------------------------------------- |
 	     */
 	    __webpack_require__(37);
-	    __webpack_require__(41);
+	    __webpack_require__(39);
 
 	    /*
 	     |--------------------------------------------------------------------------
 	     | Feature Page
 	     |-------------------------------------------------------------------------- |
 	     */
-	    __webpack_require__(42);
+	    __webpack_require__(40);
 
 	    /*
 	     |--------------------------------------------------------------------------
 	     | Docs Page
 	     |-------------------------------------------------------------------------- |
 	     */
+	    __webpack_require__(42);
 	    __webpack_require__(44);
-	    __webpack_require__(46);
 
 	});
 
@@ -20163,7 +20163,7 @@
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(38);
+	var content = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"!!./../../../node_modules/css-loader/index.js!./../../../node_modules/sass-loader/index.js!./../../../node_modules/postcss-loader/index.js!./home.scss\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(13)(content, {});
@@ -20183,33 +20183,8 @@
 	}
 
 /***/ },
-/* 38 */
-/***/ function(module, exports, __webpack_require__) {
-
-	exports = module.exports = __webpack_require__(7)();
-	// imports
-
-
-	// module
-	exports.push([module.id, "/*-------------------\n      Site Colors\n--------------------*/\n/*---  Colors  ---*/\n/*---  Light Colors  ---*/\n/*---   Neutrals  ---*/\n/*-------------------\n      Banner\n--------------------*/\nbody.home {\n  /*-----------------------------\n        Mobile View\n  -------------------------------*/ }\n\nbody.home #banner .background-image {\n  position: absolute;\n  top: 0px;\n  left: 0px;\n  z-index: -1;\n  width: 100%;\n  height: 100%;\n  content: '';\n  opacity: 0;\n  -webkit-transition: opacity 6s cubic-bezier(0.68, -0.55, 0.265, 1.4) 0s;\n  transition: opacity 6s cubic-bezier(0.68, -0.55, 0.265, 1.4) 0s; }\n\nbody.home #banner {\n  background-image: -webkit-linear-gradient(top, rgba(33, 133, 208, 0.25), rgba(100, 53, 201, 0.35)), -webkit-linear-gradient(top, rgba(27, 28, 29, 0.75), rgba(27, 28, 29, 0.75));\n  background-image: linear-gradient(to bottom, rgba(33, 133, 208, 0.25), rgba(100, 53, 201, 0.35)), linear-gradient(to bottom, rgba(27, 28, 29, 0.75), rgba(27, 28, 29, 0.75));\n  background-attachment: fixed, fixed;\n  background-position: center 100%, center 100%;\n  background-repeat: repeat, repeat;\n  background-size: cover, cover;\n  z-index: -2;\n  height: 100vh;\n  min-height: 40em;\n  overflow: hidden;\n  position: relative;\n  text-align: center; }\n\nbody.home #banner .ui.secondary.inverted.pointing.menu {\n  border: none; }\n\nbody.home #banner #screenshot {\n  background-image: url(" + __webpack_require__(39) + ");\n  background-attachment: local;\n  background-position: center 0px;\n  background-repeat: no-repeat;\n  background-size: contain;\n  height: 100%;\n  margin-top: 50px; }\n\nbody.home #banner + .ui.vertical.stripe {\n  box-shadow: 0 -7px 9px -7px rgba(0, 0, 0, 0.7); }\n\n/*-----------------------------\n        General Masthead\n  -------------------------------*/\nbody.home .masthead h2 {\n  font-size: 1.7em;\n  font-weight: normal; }\n\nbody.home .masthead .ui.menu .ui.button {\n  margin-left: 0.5em; }\n\nbody.home .masthead h1.ui.header {\n  margin-top: 1em;\n  margin-bottom: 0;\n  font-size: 7em;\n  font-weight: normal; }\n\nbody.home .masthead.segment {\n  min-height: 700px;\n  padding: 1em 0; }\n\nbody.home .quote.stripe.segment {\n  padding: 0; }\n\nbody.home .quote.stripe.segment .grid .column {\n  padding-top: 5em;\n  padding-bottom: 5em; }\n\n/*-----------------------------\n      Hide general menu\n-------------------------------*/\nbody.home .top-color-strip, body.home .hidden.menu {\n  display: none; }\n\n@media only screen and (min-width: 767px) {\n  body.home #banner .background-image {\n    background-image: -webkit-linear-gradient(top, rgba(33, 133, 208, 0.25), rgba(100, 53, 201, 0.35)), -webkit-linear-gradient(top, rgba(27, 28, 29, 0.75), rgba(27, 28, 29, 0.75)), url(" + __webpack_require__(40) + ");\n    background-image: linear-gradient(to bottom, rgba(33, 133, 208, 0.25), rgba(100, 53, 201, 0.35)), linear-gradient(to bottom, rgba(27, 28, 29, 0.75), rgba(27, 28, 29, 0.75)), url(" + __webpack_require__(40) + ");\n    background-attachment: fixed, fixed, fixed;\n    background-position: center 100%, center 100%, center 100%;\n    background-repeat: repeat, repeat, no-repeat;\n    background-size: cover, cover, cover; }\n  body.home #banner.bg .background-image {\n    opacity: 1; } }\n\n@media only screen and (max-width: 767px) {\n  body.home .masthead h2 {\n    margin-top: 0.5em;\n    font-size: 1.5em; }\n  body.home .masthead h1.ui.header {\n    font-size: 2em;\n    margin-top: 1.5em; }\n  body.home .masthead.segment {\n    min-height: 350px; } }\n", ""]);
-
-	// exports
-
-
-/***/ },
+/* 38 */,
 /* 39 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = __webpack_require__.p + "societycms-screenshot.png?c5e09ca811b05820acc65eb916218868";
-
-/***/ },
-/* 40 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = __webpack_require__.p + "banner-small.jpg?d3d31da58b55853ec705d613b1686b28";
-
-/***/ },
-/* 41 */
 /***/ function(module, exports, __webpack_require__) {
 
 	__webpack_require__(4);
@@ -20241,13 +20216,13 @@
 
 
 /***/ },
-/* 42 */
+/* 40 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(43);
+	var content = __webpack_require__(41);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(13)(content, {});
@@ -20267,7 +20242,7 @@
 	}
 
 /***/ },
-/* 43 */
+/* 41 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(7)();
@@ -20281,13 +20256,13 @@
 
 
 /***/ },
-/* 44 */
+/* 42 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(45);
+	var content = __webpack_require__(43);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(13)(content, {});
@@ -20307,7 +20282,7 @@
 	}
 
 /***/ },
-/* 45 */
+/* 43 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(7)();
@@ -20321,7 +20296,7 @@
 
 
 /***/ },
-/* 46 */
+/* 44 */
 /***/ function(module, exports, __webpack_require__) {
 
 	__webpack_require__(4);
