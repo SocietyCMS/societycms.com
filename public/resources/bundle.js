@@ -20231,8 +20231,8 @@
 
 
 	setTimeout(function(){
-	    //$('#banner').addClass('bg');
-	}, 1000);
+	    $('#banner').addClass('bg');
+	}, 500);
 
 
 
