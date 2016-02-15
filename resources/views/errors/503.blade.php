@@ -18,6 +18,9 @@
     <meta name="keywords" content="societycms, php, cms, web">
 
     <script src="/resources/bundle.js"></script>
+
+    @include('partials.piwik')
+
 </head>
 <body class="home">
 
