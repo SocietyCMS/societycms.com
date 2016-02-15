@@ -15,7 +15,11 @@ $('#banner')
         }
     });
 
-$('#banner').addClass('bg')
+
+setTimeout(function(){
+    $('#banner').addClass('bg');
+}, 500);
+
 
 
 
