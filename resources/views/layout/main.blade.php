@@ -6,7 +6,7 @@
 
     <!-- Standard Meta -->
     <meta charset="utf-8"/>
-    <link rel="apple-touch-icon" href="/apple-touch-icon-precomposed.png">
+    <link rel="apple-touch-icon" href="/icon/apple-touch-icon-precomposed.png">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
@@ -15,7 +15,7 @@
 
     <meta property="og:title" content="SocietyCMS" />
     <meta property="og:description" content="The only CMS designed for you and your society." />
-    <meta property="og:image" content="/icon/apple-touch-icon-114x114.png" />
+    <meta property="og:image" content="/icon/favicon.png" />
 
 
     <link rel="apple-touch-icon" sizes="57x57" href="/icon/apple-touch-icon-57x57.png">
