@@ -15,7 +15,7 @@
 
     <meta property="og:title" content="SocietyCMS" />
     <meta property="og:description" content="The only CMS designed for you and your society." />
-    <meta property="og:image" content="/apple-touch-icon-precomposed.png" />
+    <meta property="og:image" content="/icon/apple-touch-icon-180x180.png" />
 
 
     <link rel="apple-touch-icon" sizes="57x57" href="/icon/apple-touch-icon-57x57.png">
