@@ -8,7 +8,6 @@ use Illuminate\Support\Facades\Cache;
 
 class GitHub
 {
-
     public function latestOrganisationCommits()
     {
         return Cache::remember('latestOrganisationCommits', 1, function () {
@@ -17,9 +16,9 @@ class GitHub
             }
 
             $response = GitHubAPI::connection('main')->getHttpClient()->get('orgs/societycms/events');
+
             return collect(ResponseMediator::getContent($response))->where('type', 'PushEvent')->take(3);
 
         });
     }
-
 }
