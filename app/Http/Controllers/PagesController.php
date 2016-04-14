@@ -1,7 +1,9 @@
-<?php namespace App\Http\Controllers;
+<?php
 
-class PagesController extends Controller {
+namespace App\Http\Controllers;
 
+class PagesController extends Controller
+{
     /*
     |--------------------------------------------------------------------------
     | Pages Controller
@@ -47,5 +49,4 @@ class PagesController extends Controller {
     {
         return view('modules', ['title' => 'Modules']);
     }
-
 }

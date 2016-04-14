@@ -19,7 +19,8 @@ define('DEFAULT_VERSION', 'master');
 /**
  * Convert some text to Markdown...
  */
-function markdown($text) {
+function markdown($text)
+{
     return (new ParsedownExtra)->text($text);
 }
 
