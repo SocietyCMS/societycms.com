@@ -18,11 +18,14 @@
         Menus
   -------------------------------*/
 
+
 .ui.main.menu {
   border: none;
   border-radius: 0;
 
   border-bottom: 1px solid $lightGrey;
+
+  margin: 0;
 }
 
 .ui.secondary.pointing.menu, .ui.main.menu {
