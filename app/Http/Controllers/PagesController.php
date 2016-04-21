@@ -49,7 +49,7 @@ class PagesController extends Controller
      */
     public function modules()
     {
-        if(! File::exists(base_path('resources/modules.json'))) {
+        if (! File::exists(base_path('resources/modules.json'))) {
             throw new \Exception('Can not load modules.');
         }
         $modules_json = json_decode(File::get(base_path('resources/modules.json')));
