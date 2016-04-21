@@ -1,99 +1,49 @@
+@inject('github', 'App\GitHub')
+
 @extends('layout.main')
 
 @section('body-class', 'modules')
 
 @section('content')
 
-    <div class="ui container">
+    <div class="ui relaxed container">
+
         <div class="ui centered cards">
-                <div class="ui card">
+            @foreach($modules as $modules)
+                <div class="ui blue card">
+                    @if($modules->image)
+                        <div class="image">
+                            <img src="{{$modules->image}}">
+                        </div>
+                    @endif
                     <div class="content">
-                        <div class="header">Cute Dog</div>
-                        <div class="meta">2 days ago</div>
+                        <h2 class="ui header">
+                            <div class="content">
+                                {{$modules->name}}
+                                <div class="sub header">{{$modules->vendor}}</div>
+                            </div>
+                        </h2>
                         <div class="description">
-                            <p>Cute dogs come in a variety of shapes and sizes. Some cute dogs are cute for their adorable faces, others for their tiny stature, and even others for their massive size.</p>
-                            <p>Many people also have their own barometers for what makes a cute dog.</p>
+                            {{$modules->description}}
                         </div>
                     </div>
-                </div>
+                    @if($repository = $github->getRepository($modules->vendor, $modules->name))
+                        <div class="extra content">
+                            <a href="{{$repository['html_url']}}" target="_blank" class="left floated">
+                                <i class="github link icon"></i>
+                                Github
+                            </a>
 
-                <div class="ui card">
-                    <div class="content">
-                        <div class="header">Cute Dog</div>
-                        <div class="meta">2 days ago</div>
-                        <div class="description">
-                            <p>Cute dogs come in a variety of shapes and sizes. Some cute dogs are cute for their adorable faces, others for their tiny stature, and even others for their massive size.</p>
-                            <p>Many people also have their own barometers for what makes a cute dog.</p>
+                             <span class="right floated star">
+                                 {{$github->repositoryLastUpdatedAt($modules->vendor, $modules->name)}}
+                            </span>
                         </div>
-                    </div>
+                    @endif
                 </div>
-
-                <div class="ui card">
-                    <div class="content">
-                        <div class="header">Cute Dog</div>
-                        <div class="meta">2 days ago</div>
-                        <div class="description">
-                            <p>Cute dogs come in a variety of shapes and sizes. Some cute dogs are cute for their adorable faces, others for their tiny stature, and even others for their massive size.</p>
-                            <p>Many people also have their own barometers for what makes a cute dog.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="ui card">
-                    <div class="content">
-                        <div class="header">Cute Dog</div>
-                        <div class="meta">2 days ago</div>
-                        <div class="description">
-                            <p>Cute dogs come in a variety of shapes and sizes. Some cute dogs are cute for their adorable faces, others for their tiny stature, and even others for their massive size.</p>
-                            <p>Many people also have their own barometers for what makes a cute dog.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="ui card">
-                    <div class="content">
-                        <div class="header">Cute Dog</div>
-                        <div class="meta">2 days ago</div>
-                        <div class="description">
-                            <p>Cute dogs come in a variety of shapes and sizes. Some cute dogs are cute for their adorable faces, others for their tiny stature, and even others for their massive size.</p>
-                            <p>Many people also have their own barometers for what makes a cute dog.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="ui card">
-                    <div class="content">
-                        <div class="header">Cute Dog</div>
-                        <div class="meta">2 days ago</div>
-                        <div class="description">
-                            <p>Cute dogs come in a variety of shapes and sizes. Some cute dogs are cute for their adorable faces, others for their tiny stature, and even others for their massive size.</p>
-                            <p>Many people also have their own barometers for what makes a cute dog.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="ui card">
-                    <div class="content">
-                        <div class="header">Cute Dog</div>
-                        <div class="meta">2 days ago</div>
-                        <div class="description">
-                            <p>Cute dogs come in a variety of shapes and sizes. Some cute dogs are cute for their adorable faces, others for their tiny stature, and even others for their massive size.</p>
-                            <p>Many people also have their own barometers for what makes a cute dog.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="ui card">
-                    <div class="content">
-                        <div class="header">Cute Dog</div>
-                        <div class="meta">2 days ago</div>
-                        <div class="description">
-                            <p>Cute dogs come in a variety of shapes and sizes. Some cute dogs are cute for their adorable faces, others for their tiny stature, and even others for their massive size.</p>
-                            <p>Many people also have their own barometers for what makes a cute dog.</p>
-                        </div>
-                    </div>
-                </div>
-
+            @endforeach
         </div>
     </div>
+
+    <div class="ui hidden divider"></div>
 
 @endsection

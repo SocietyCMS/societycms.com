@@ -1,0 +1,31 @@
+[
+  {
+    "name": "Blog",
+    "vendor": "SocietyCMS",
+    "icon": "newspaper",
+    "description": "Cute dogs come in a variety of shapes and sizes. Some cute dogs are cute for their adorable faces, others for their tiny stature, and even others for their massive size.",
+    "image": "/images/mockups/small-ca403a4d09664a578df457d92d1d85a6_23_3000.jpg"
+  },
+  {
+    "name": "Page",
+    "vendor": "SocietyCMS",
+    "icon": "file outline",
+    "description": "Cute dogs come in a variety of shapes and sizes. Some cute dogs are cute for their adorable faces, others for their tiny stature, and even others for their massive size.",
+    "image": "/images/mockups/small-b5b3076b056e426196289166deff9b02_8_3000.jpg"
+  },
+  {
+    "name": "Gallery",
+    "vendor": "SocietyCMS",
+    "icon": "photo",
+    "description": "Cute dogs come in a variety of shapes and sizes. Some cute dogs are cute for their adorable faces, others for their tiny stature, and even others for their massive size.",
+    "image": "/images/mockups/small-c87fc9b9468b4a02b377d0ac1cc4b833_15_3000.jpg"
+
+  },
+  {
+    "name": "Documents",
+    "vendor": "SocietyCMS",
+    "icon": "folder open outline",
+    "description": "Cute dogs come in a variety of shapes and sizes. Some cute dogs are cute for their adorable faces, others for their tiny stature, and even others for their massive size.",
+    "image": "/images/mockups/small-2502074fe5cc4e96889b5a73292e80c0_12_1920.jpg"
+  }
+]
