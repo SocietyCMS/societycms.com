@@ -39,7 +39,7 @@ class GitHub
             return [];
         }
 
-        return Cache::remember("repositoryLastUpdated.{$vendor}/{$repository}", 60, function () use ($vendor,$repository) {
+        return Cache::remember("repositoryLastUpdated.{$vendor}/{$repository}", 60, function () use ($vendor, $repository) {
             return  GitHubAPI::connection('main')->repo()->show($vendor, $repository);
         });
     }
