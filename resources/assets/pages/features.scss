@@ -50,4 +50,49 @@ body.features {
   }
 
 
+  .ui.vertical.stripe.relaxed.statement.segment {
+    padding-bottom: 0;
+  }
+
+
+  .browser-window {
+    display: block;
+    margin: 1em auto 15px;
+    overflow: hidden;
+    text-align: left;
+    width: 920px;
+    max-width: 92%;
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+
+    .top-bar{
+      height: 30px;
+      border-radius: 4px 4px 0 0;
+      border-top: thin solid #eaeae9;
+      border-bottom: thin solid #dfdfde;
+      background: #ebebeb;
+
+      .circles {
+        margin: 1px 10px;
+      }
+      .circle {
+        height: 8px;
+        width: 8px;
+        display: inline-block;
+        border-radius: 50%;
+        background-color: white;
+      }
+    }
+  }
+
+  .window-content {
+    margin: 0;
+    width: 100%;
+    min-height: 90%;
+    border-radius: 0 0 4px 4px;
+  }
+
 }

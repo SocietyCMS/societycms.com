@@ -110,7 +110,7 @@
     </div>
 
 
-    <div class="ui vertical stripe relaxed segment">
+    <div class="ui vertical stripe relaxed secondary segment">
 
         <div class="ui three column stackable grid container">
             <div class="column">
