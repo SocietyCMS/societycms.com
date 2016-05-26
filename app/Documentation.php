@@ -24,8 +24,8 @@ class Documentation
     /**
      * Create a new documentation instance.
      *
-     * @param  Filesystem  $files
-     * @param  Cache  $cache
+     * @param  Filesystem $files
+     * @param  Cache $cache
      * @return void
      */
     public function __construct(Filesystem $files, Cache $cache)
@@ -37,13 +37,13 @@ class Documentation
     /**
      * Get the documentation index page.
      *
-     * @param  string  $version
+     * @param  string $version
      * @return string
      */
     public function getIndex($version)
     {
-        return $this->cache->remember('docs.'.$version.'.index', 5, function () use ($version) {
-            $path = base_path('resources/docs/'.$version.'/documentation.md');
+        return $this->cache->remember('docs.' . $version . '.index', 5, function () use ($version) {
+            $path = base_path('resources/docs/' . $version . '/documentation.md');
 
             if ($this->files->exists($path)) {
                 return $this->replaceLinks($version, markdown($this->files->get($path)));
@@ -55,14 +55,14 @@ class Documentation
     /**
      * Get the given documentation page.
      *
-     * @param  string  $version
-     * @param  string  $page
+     * @param  string $version
+     * @param  string $page
      * @return string
      */
     public function get($version, $page)
     {
-        return $this->cache->remember('docs.'.$version.'.'.$page, 5, function () use ($version, $page) {
-            $path = base_path('resources/docs/'.$version.'/'.$page.'.md');
+        return $this->cache->rememberForever('docs.' . $version . '.' . $page, function () use ($version, $page) {
+            $path = base_path('resources/docs/' . $version . '/' . $page . '.md');
 
             if ($this->files->exists($path)) {
                 return $this->replaceLinks($version, markdown($this->files->get($path)));
@@ -74,8 +74,8 @@ class Documentation
     /**
      * Replace the version place-holder in links.
      *
-     * @param  string  $version
-     * @param  string  $content
+     * @param  string $version
+     * @param  string $content
      * @return string
      */
     public static function replaceLinks($version, $content)
@@ -86,14 +86,14 @@ class Documentation
     /**
      * Check if the given section exists.
      *
-     * @param  string  $version
-     * @param  string  $page
+     * @param  string $version
+     * @param  string $page
      * @return bool
      */
     public function sectionExists($version, $page)
     {
         return $this->files->exists(
-            base_path('resources/docs/'.$version.'/'.$page.'.md')
+            base_path('resources/docs/' . $version . '/' . $page . '.md')
         );
     }
 
@@ -106,7 +106,7 @@ class Documentation
     {
         return [
             'master' => 'Master',
-            '1.0' => '1.0',
+            '1.0'    => '1.0',
         ];
     }
 }
