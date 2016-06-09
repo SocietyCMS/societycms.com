@@ -48,7 +48,6 @@ class Documentation
             if ($this->files->exists($path)) {
                 return $this->replaceLinks($version, markdown($this->files->get($path)));
             }
-
         });
     }
 
@@ -67,7 +66,6 @@ class Documentation
             if ($this->files->exists($path)) {
                 return $this->replaceLinks($version, markdown($this->files->get($path)));
             }
-
         });
     }
 
