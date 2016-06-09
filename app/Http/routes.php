@@ -25,7 +25,6 @@ function markdown($text)
 }
 
 get('/', ['as' => 'home', 'uses' => 'PagesController@home']);
-get('features', ['as' => 'features', 'uses' => 'PagesController@features']);
 get('demo', ['as' => 'demo', 'uses' => 'PagesController@demo']);
 get('modules', ['as' => 'modules', 'uses' => 'PagesController@modules']);
 

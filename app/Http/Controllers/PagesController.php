@@ -27,16 +27,6 @@ class PagesController extends Controller
      *
      * @return Response
      */
-    public function features()
-    {
-        return view('features', ['title' => 'Features']);
-    }
-
-    /**
-     * Show the features page.
-     *
-     * @return Response
-     */
     public function demo()
     {
         return view('demo', ['title' => 'Demo']);

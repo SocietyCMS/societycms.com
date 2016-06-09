@@ -132,4 +132,94 @@ body.home {
     }
   }
 
+
+
+  // Blue Dev-features section
+  .feature.column {
+
+    margin-bottom: 3em;
+
+    .header {
+      padding-bottom: .21428571rem;
+      border-bottom: 1px solid rgba(34,36,38,.15);
+    }
+    .content {
+      line-height: 1.5em;
+    }
+  }
+
+
+  .ui.emphasis.vertical.stripe {
+
+    .feature.header {
+      text-align: center;
+      color: $white;
+
+      padding-bottom: .51428571rem;
+      border-bottom: 1px solid rgba($white, 0.15);
+
+      .icon {
+        float: none;
+        display: block;
+        margin: 0em auto 1rem;
+        font-size: 3em;
+
+        border-radius: 500em;
+        line-height: 1;
+        padding: 0.5em 0.5em;
+        box-shadow: 0em 0em 0em 0.05em rgba($white, 0.3) inset;
+        width: 2em;
+        height: 2em;
+      }
+
+    }
+
+  }
+
+
+  .ui.vertical.stripe.relaxed.statement.segment {
+    padding-bottom: 0;
+  }
+
+
+  .browser-window {
+    display: block;
+    margin: 1em auto 15px;
+    overflow: hidden;
+    text-align: left;
+    width: 920px;
+    max-width: 92%;
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+
+    .top-bar{
+      height: 30px;
+      border-radius: 4px 4px 0 0;
+      border-top: thin solid #eaeae9;
+      border-bottom: thin solid #dfdfde;
+      background: #ebebeb;
+
+      .circles {
+        margin: 1px 10px;
+      }
+      .circle {
+        height: 8px;
+        width: 8px;
+        display: inline-block;
+        border-radius: 50%;
+        background-color: white;
+      }
+    }
+  }
+
+  .window-content {
+    margin: 0;
+    width: 100%;
+    min-height: 90%;
+    border-radius: 0 0 4px 4px;
+  }
+
 }
