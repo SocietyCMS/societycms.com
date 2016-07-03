@@ -88,18 +88,11 @@
 
 	    /*
 	     |--------------------------------------------------------------------------
-	     | Feature Page
-	     |-------------------------------------------------------------------------- |
-	     */
-	    __webpack_require__(42);
-
-	    /*
-	     |--------------------------------------------------------------------------
 	     | Docs Page
 	     |-------------------------------------------------------------------------- |
 	     */
+	    __webpack_require__(42);
 	    __webpack_require__(44);
-	    __webpack_require__(46);
 
 	});
 
@@ -20237,8 +20230,8 @@
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!./../../../node_modules/css-loader/index.js!./../../../node_modules/sass-loader/index.js!./../../../node_modules/postcss-loader/index.js!./features.scss", function() {
-				var newContent = require("!!./../../../node_modules/css-loader/index.js!./../../../node_modules/sass-loader/index.js!./../../../node_modules/postcss-loader/index.js!./features.scss");
+			module.hot.accept("!!./../../../node_modules/css-loader/index.js!./../../../node_modules/sass-loader/index.js!./../../../node_modules/postcss-loader/index.js!./docs.scss", function() {
+				var newContent = require("!!./../../../node_modules/css-loader/index.js!./../../../node_modules/sass-loader/index.js!./../../../node_modules/postcss-loader/index.js!./docs.scss");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -20256,53 +20249,13 @@
 
 
 	// module
-	exports.push([module.id, "/*-------------------\n      Site Colors\n--------------------*/\n/*---  Colors  ---*/\n/*---  Light Colors  ---*/\n/*---   Neutrals  ---*/\n/*-------------------\n      Feature Page\n--------------------*/\nbody.features\n.feature.column {\n  margin-bottom: 3em; }\n\nbody.features\n.feature.column .header {\n  padding-bottom: .21428571rem;\n  border-bottom: 1px solid rgba(34, 36, 38, 0.15); }\n\nbody.features\n.feature.column .content {\n  line-height: 1.5em; }\n\nbody.features .ui.emphasis.vertical.stripe .feature.header {\n  text-align: center;\n  color: #FFFFFF;\n  padding-bottom: .51428571rem;\n  border-bottom: 1px solid rgba(255, 255, 255, 0.15); }\n\nbody.features .ui.emphasis.vertical.stripe .feature.header .icon {\n  float: none;\n  display: block;\n  margin: 0em auto 1rem;\n  font-size: 3em;\n  border-radius: 500em;\n  line-height: 1;\n  padding: 0.5em 0.5em;\n  box-shadow: 0em 0em 0em 0.05em rgba(255, 255, 255, 0.3) inset;\n  width: 2em;\n  height: 2em; }\n\nbody.features .ui.vertical.stripe.relaxed.statement.segment {\n  padding-bottom: 0; }\n\nbody.features .browser-window {\n  display: block;\n  margin: 1em auto 15px;\n  overflow: hidden;\n  text-align: left;\n  width: 920px;\n  max-width: 92%;\n  display: inline-block;\n  border-radius: 4px;\n  background-color: #fff;\n  border: 1px solid #ddd;\n  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1); }\n\nbody.features .browser-window .top-bar {\n  height: 30px;\n  border-radius: 4px 4px 0 0;\n  border-top: thin solid #eaeae9;\n  border-bottom: thin solid #dfdfde;\n  background: #ebebeb; }\n\nbody.features .browser-window .top-bar .circles {\n  margin: 1px 10px; }\n\nbody.features .browser-window .top-bar .circle {\n  height: 8px;\n  width: 8px;\n  display: inline-block;\n  border-radius: 50%;\n  background-color: white; }\n\nbody.features .window-content {\n  margin: 0;\n  width: 100%;\n  min-height: 90%;\n  border-radius: 0 0 4px 4px; }\n", ""]);
-
-	// exports
-
-
-/***/ },
-/* 44 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// style-loader: Adds some css to the DOM by adding a <style> tag
-
-	// load the styles
-	var content = __webpack_require__(45);
-	if(typeof content === 'string') content = [[module.id, content, '']];
-	// add the styles to the DOM
-	var update = __webpack_require__(13)(content, {});
-	if(content.locals) module.exports = content.locals;
-	// Hot Module Replacement
-	if(false) {
-		// When the styles change, update the <style> tags
-		if(!content.locals) {
-			module.hot.accept("!!./../../../node_modules/css-loader/index.js!./../../../node_modules/sass-loader/index.js!./../../../node_modules/postcss-loader/index.js!./docs.scss", function() {
-				var newContent = require("!!./../../../node_modules/css-loader/index.js!./../../../node_modules/sass-loader/index.js!./../../../node_modules/postcss-loader/index.js!./docs.scss");
-				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-				update(newContent);
-			});
-		}
-		// When the module is disposed, remove the <style> tags
-		module.hot.dispose(function() { update(); });
-	}
-
-/***/ },
-/* 45 */
-/***/ function(module, exports, __webpack_require__) {
-
-	exports = module.exports = __webpack_require__(7)();
-	// imports
-
-
-	// module
 	exports.push([module.id, "/*-------------------\n      Site Colors\n--------------------*/\n/*---  Colors  ---*/\n/*---  Light Colors  ---*/\n/*---   Neutrals  ---*/\nbody.docs .ui.menu {\n  margin: 0; }\n\nbody.docs .pusher > .full.height {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: horizontal;\n  -webkit-box-direction: normal;\n  -ms-flex-direction: row;\n  flex-direction: row;\n  min-height: 100vh; }\n\nbody.docs .full.height > .toc {\n  position: relative;\n  z-index: 1;\n  width: 250px;\n  -webkit-box-flex: 0;\n  -ms-flex: 0 0 auto;\n  flex: 0 0 auto;\n  background-color: #1B1C1D; }\n\nbody.docs .full.height > .toc .ui.menu {\n  border-radius: 0;\n  border-width: 0 1px 0 0;\n  box-shadow: none;\n  margin: 0;\n  width: inherit;\n  overflow: hidden;\n  will-change: transform; }\n\nbody.docs .full.height > .toc .ui.dimmer {\n  background-color: fade(#1B1C1D, 85%); }\n\nbody.docs #content {\n  -webkit-box-flex: 1;\n  -ms-flex: 1 1 auto;\n  flex: 1 1 auto;\n  min-width: 0; }\n\nbody.docs .docs.grid {\n  padding: 2em 0em 7em; }\n\nbody.docs .masthead > .container, body.docs .docs.container {\n  margin-left: 3em !important;\n  margin-right: 3em !important;\n  width: auto !important; }\n\n/*-----------------------------\n          Nav\n    -------------------------------*/\nbody.docs .docs-nav > ul {\n  list-style: none;\n  padding: 0;\n  margin: 0; }\n\nbody.docs .docs-nav > ul > li {\n  font-size: 18px;\n  font-weight: 400;\n  padding: 0 0 10px;\n  margin: 25px 0 0px; }\n\nbody.docs .docs-nav > ul > li > ul {\n  border-top: 1px dashed rgba(27, 28, 29, 0.1);\n  display: block;\n  list-style: none;\n  margin: 10px 0 0 0;\n  padding: 10px 0 0 0;\n  font-size: 14px; }\n\nbody.docs .ui.mobile.menu .docs-nav {\n  padding-right: 0; }\n\nbody.docs .ui.mobile.menu .docs-nav a {\n  color: rgba(255, 255, 255, 0.9); }\n\nbody.docs .ui.mobile.menu .docs-nav > ul > li > ul {\n  border-top: 1px solid rgba(255, 255, 255, 0.1); }\n\nbody.docs .ui.mobile.menu .docs-nav > ul > li > ul > li {\n  margin: 5px 0 0 0; }\n\n/*-----------------------------\n          Article\n    -------------------------------*/\nbody.docs article {\n  padding: 3em; }\n\nbody.docs article\nh1 + ul {\n  padding: 0;\n  list-style: none;\n  font-size: 16px;\n  font-weight: bold;\n  line-height: 1.5;\n  padding-bottom: 50px;\n  border-bottom: 1px solid rgba(34, 36, 38, 0.15); }\n\nbody.docs article li > ul {\n  font-weight: normal;\n  list-style: none; }\n\nbody.docs article\nh1 {\n  font-size: 3rem; }\n\nbody.docs article h2 {\n  margin-top: 2em; }\n\nbody.docs article h3 {\n  margin-top: 2em; }\n\nbody.docs article\np, body.docs article pre {\n  margin: 10px 0 20px; }\n\nbody.docs article\n.content-list ul li {\n  margin: 4px;\n  line-height: 1.65; }\n\n@media only screen and (max-width: 767px) {\n  body.docs article {\n    padding: 0.8em; } }\n", ""]);
 
 	// exports
 
 
 /***/ },
-/* 46 */
+/* 44 */
 /***/ function(module, exports, __webpack_require__) {
 
 	__webpack_require__(4);
