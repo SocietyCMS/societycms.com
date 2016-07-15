@@ -137,7 +137,7 @@
 
     <div class="ui vertical stripe relaxed center aligned secondary statement segment">
         <h1 class="ui header">
-            It doesn't have to be complicated!
+            It doesn't need to be complicated!
             <div class="sub header">We believe everyone should be able to update a website.</div>
         </h1>
         <div class="browser-window">
